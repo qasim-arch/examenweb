@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen de Biología - Los Vertebrados</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f9ff; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .pregunta { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #3498db; }
+        .p-texto { font-weight: bold; font-size: 1.1em; margin-bottom: 10px; display: block; }
+        .respuesta { background: #e8f4fd; padding: 10px; border-radius: 4px; display: none; margin-top: 10px; font-style: italic; color: #2c3e50; }
+        button { background: #3498db; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+
+    <h1>Examen de Vertebrados (1º ESO)</h1>
+    <p style="text-align: center;">Intenta responder cada pregunta antes de pulsar el botón para ver la solución.</p>
+
+    <div id="examen">
+        <!-- Pregunta 1 -->
+        <div class="pregunta">
+            <span class="p-texto">1. ¿En qué se diferencia la simetría bilateral de la radial?</span>
+            <button onclick="toggle(1)">Ver respuesta</button>
+            <div id="r1" class="respuesta">La bilateral divide al animal en dos mitades iguales mediante un solo plano (derecha/izquierda), mientras que la radial permite varios planos de división iguales (como una rueda).</div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="pregunta">
+            <span class="p-texto">2. Define animal "ectotermo".</span>
+            <button onclick="toggle(2)">Ver respuesta</button>
+            <div id="r2" class="respuesta">Es un animal que no regula su temperatura interna; su cuerpo depende de la temperatura del ambiente (peces, anfibios y reptiles).</div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="pregunta">
+            <span class="p-texto">3. ¿Qué son los animales ovovivíparos?</span>
+            <button onclick="toggle(3)">Ver respuesta</button>
+            <div id="r3" class="respuesta">Son animales cuyos huevos se desarrollan y eclosionan dentro del cuerpo de la madre.</div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="pregunta">
+            <span class="p-texto">4. ¿Cuál es la función de la línea lateral en los peces?</span>
+            <button onclick="toggle(4)">Ver respuesta</button>
+            <div id="r4" class="respuesta">Es un órgano sensorial que detecta cambios de presión en el agua y ayuda a localizar presas o depredadores.</div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="pregunta">
+            <span class="p-texto">5. ¿Qué diferencia principal hay entre el esqueleto de un tiburón y el de una merluza?</span>
+            <button onclick="toggle(5)">Ver respuesta</button>
+            <div id="r5" class="respuesta">El tiburón tiene esqueleto de cartílago (flexible) y la merluza tiene esqueleto óseo (hueso rígido).</div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="pregunta">
+            <span class="p-texto">6. ¿Por qué los anfibios adultos necesitan vivir cerca del agua si tienen pulmones?</span>
+            <button onclick="toggle(6)">Ver respuesta</button>
+            <div id="r6" class="respuesta">Porque tienen respiración cutánea y necesitan mantener su piel siempre húmeda para poder respirar a través de ella.</div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="pregunta">
+            <span class="p-texto">7. Explica qué es la metamorfosis de una rana.</span>
+            <button onclick="toggle(7)">Ver respuesta</button>
+            <div id="r7" class="respuesta">Es el proceso de cambio de larva (renacuajo con cola y branquias) a adulto (con patas y pulmones).</div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="pregunta">
+            <span class="p-texto">8. ¿Qué ventaja tienen los huevos de los reptiles frente a los de los peces?</span>
+            <button onclick="toggle(8)">Ver respuesta</button>
+            <div id="r8" class="respuesta">Tienen cáscara y varias capas de protección que evitan que el embrión se deseque, permitiéndoles nacer en tierra firme.</div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="pregunta">
+            <span class="p-texto">9. ¿Qué es el órgano de Jacobson?</span>
+            <button onclick="toggle(9)">Ver respuesta</button>
+            <div id="r9" class="respuesta">Es un olfato adicional situado en el cielo de la boca de muchos reptiles; usan la lengua para llevarle las partículas de olor.</div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="pregunta">
+            <span class="p-texto">10. ¿Para qué sirve la quilla en las aves?</span>
+            <button onclick="toggle(10)">Ver respuesta</button>
+            <div id="r10" class="respuesta">Es un hueso del esternón muy desarrollado donde se sujetan los fuertes músculos que baten las alas para volar.</div>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="pregunta">
+            <span class="p-texto">11. ¿Qué son los sacos aéreos de las aves?</span>
+            <button onclick="toggle(11)">Ver respuesta</button>
+            <div id="r11" class="respuesta">Son bolsas conectadas a los pulmones que almacenan aire, facilitan el intercambio de gases y ayudan a que el ave flote mejor en el aire.</div>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="pregunta">
+            <span class="p-texto">12. Define animal "homeotermo" o "endotermo".</span>
+            <button onclick="toggle(12)">Ver respuesta</button>
+            <div id="r12" class="respuesta">Es aquel que puede mantener su temperatura corporal constante independientemente del frío o calor exterior (aves y mamíferos).</div>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="pregunta">
+            <span class="p-texto">13. ¿Qué característica única da nombre al grupo de los Mamíferos?</span>
+            <button onclick="toggle(13)">Ver respuesta</button>
+            <div id="r13" class="respuesta">La presencia de glándulas mamarias que producen leche para alimentar a las crías.</div>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="pregunta">
+            <span class="p-texto">14. ¿En qué se diferencia un mamífero Marsupial de uno Placentario?</span>
+            <button onclick="toggle(14)">Ver respuesta</button>
+            <div id="r14" class="respuesta">En los marsupiales la cría nace muy pronto y termina de desarrollarse en una bolsa (marsupio), mientras que en los placentarios el desarrollo es completo dentro del útero materno.</div>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="pregunta">
+            <span class="p-texto">15. Cita tres características que hacen "especial" al ser humano como mamífero.</span>
+            <button onclick="toggle(15)">Ver respuesta</button>
+            <div id="r15" class="respuesta">Cerebro muy desarrollado (lenguaje/razonamiento), bipedismo (caminar sobre dos patas) y pulgar oponible para usar instrumentos.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggle(id) {
+            var r = document.getElementById("r" + id);
+            if (r.style.display === "block") {
+                r.style.display = "none";
+            } else {
+                r.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
